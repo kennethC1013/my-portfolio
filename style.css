@@ -5,6 +5,10 @@ html {
     color: #0D1B2A;
 }
 
+a {
+    
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -24,7 +28,7 @@ header h1 {
 }
 
 nav {
-    flex-basis: 50em;
+    flex-basis: 100em;
     text-align: center;
 }
 
@@ -37,6 +41,10 @@ nav li {
 h1 {
     flex-basis: 50em;
     font-size: 2rem;
+}
+
+h2 {
+    color: #415A77;
 }
 
 main {
@@ -67,6 +75,7 @@ p {
     padding-top: 10%;
     margin: 0 3em;
     text-align: center;
+    padding-bottom: 2em;
 }
 
 #projects h1 {
@@ -74,10 +83,24 @@ p {
 }
 
 #projects h2 {
-    padding-top: 5em;
+    padding-top: 1em;
 }
 
-.tea {
+#projects p {
+    line-height: normal;
+}
+
+#teaImage {
+    width: 50%;
+    height: 50%;
+}
+
+#craftsImage {
+    width: 50%;
+    height: 50%;
+}
+
+#cheatSheet {
     width: 50%;
     height: 50%;
 }
