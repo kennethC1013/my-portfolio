@@ -10,7 +10,6 @@ html {
 
 .email {
     color: #415A77;
-    text-decoration: underline;
     font-weight: 300;
 }
 
@@ -19,8 +18,24 @@ a:visited {
 }
 
 a:hover {
-    color: #f9ba00;
+    color: #0D1B2A;
     text-decoration: none;
+}
+
+.navlink {
+    color: #E0E1DD;
+}
+
+.navLink:visited {
+    color: #778DA9;
+}
+
+.navLink:hover {
+    color: #778DA9;
+}
+
+.navLink:active {
+    font-size: 0.9em;
 }
 
 .button {
@@ -38,29 +53,55 @@ a:hover {
     cursor: pointer;
 }
 
-header {
-    background-color: #778DA9;
-    padding-top: 2em;
-    padding-left: 10em;
-    padding-bottom: 2em;
+.title {
+    background-image: url('images/DenverSkyline.jpeg');
+    background-attachment: fixed;
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 50em;
     display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-bottom: 2em;
+}
+
+
+.title h1 {
+    text-align: center;
+    padding-top: 6em;
+    font-size: 3em;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 3em;
+    background-color: #000000;
 }
 
 header h1 {
+    color: #E0E1DD;
     font-weight: 900;
     text-shadow: .2em .2em #7C808F;
+    border: 1px solid black;
+    flex: 1 1 auto;
+    width: 75%;
 }
 
 nav {
-    flex-basis: 100em;
-    text-align: right;
-    padding-right: 10em;
+    flex: 1 1 auto;
+    display: flex;
 }
 
 nav li {
-    display: inline-block;
-    font-size: 1.5em;
-    font-weight: 700;
+    display: block;
+    width: auto;
+    font-size: 2em;
+    padding-right: 0.5em;
+    float: right;
+    min-height: 100%;
 }
 
 h1 {
@@ -75,7 +116,6 @@ h2 {
 }
 
 main {
-    border: 5em solid #778DA9;
     border-style: none double;
     display: flex;
     flex-direction: column;
@@ -83,17 +123,34 @@ main {
 
 #about {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 3em;
     margin: 0 3em;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #about h1 {
     font-size: 3em;
-    padding: 1em;
+    padding-bottom: 1em;
+    flex: auto;
+}
+
+.tech {
+    display: flex;
+    gap: 2em;
+}
+
+.logo {
+    display: block;
+    max-width: 7em;
+    max-height: 7em;
+    width: auto;
+    height: auto;
 }
 
 p {
+    width: 50em;
     font-size: 1.5em;
     line-height: 1.5em;
     padding-bottom: 2em;
@@ -104,6 +161,9 @@ p {
     margin: 0 3em;
     text-align: center;
     padding: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .quoteProject {
@@ -114,6 +174,7 @@ p {
 #projects h1 {
     font-size: 3em;
     padding-bottom: 1em;
+    flex: auto;
 }
 
 #projects p {
