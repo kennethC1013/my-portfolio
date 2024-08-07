@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/cbb5fb2b1f.js" crossorigin="anonymous"></script>
     <title>Kenneth's Portfolio</title>
 </head>
 
 <body>
+
     <header>
         <h1>Kenneth Casias</h1>
         <nav>
@@ -19,34 +21,60 @@
             </ul>
         </nav>
     </header>
+
     <main>
+
         <section class="title">
             <h1>Welcome to my website!</h1>
         </section>
+
         <section id="about">
-            <h1>About Me</h1>
-            <p>
-                I am currently serving in the U.S. Army and aspire to transition into a career in
-                software development upon completing my service. Hailing from Aurora, Colorado, I am
-                actively learning JavaScript, HTML, and CSS to build a solid foundation in web development. Outside
-                of
-                my professional pursuits, I enjoy working out and playing video games. Dedicated to continuous
-                self-improvement, I am always seeking new ways to enhance my skills and knowledge.
-            </p>
-            <p>
-                For any inquiries or to get in touch, please feel free to reach out to me at
-                <span class="email">kennethcasias@gmail.com</span>. <br>I
-                am
-                open to networking opportunities and collaborations, especially in the field of software development.
-            </p>
-            <h2>Technologies I have worked with:</h2>
-            <section class="tech">
-                <img class='logo' src="images/js.png" alt="javascript logo">
-                <img class='logo' src="images/css.png" alt="css logo">
-                <img class="logo" src="images/github.png" alt="github logo">
-                <img class="logo" src="images/html.png" alt="html logo">
+            <section class="contactCard">
+                <img class='me' src="images/me.png" alt="Kenneth Casias">
+                <h1 class="name">Kenneth<br>Casias</h1>
+                <p class="jobTitle">Web Developer</p>
+                <p class="location">Central Texas</p>
+                <a id='linkedin' href="https://www.linkedin.com/in/kenneth-casias/"><i
+                        class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a id="github" href="https://github.com/kennethC1013"><i
+                        class="fa-brands fa-square-github fa-2xl"></i></a>
+                <a id="instagram" href="https://www.instagram.com/kennethcasias/"><i
+                        class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a id="mail" href="mailto:kennethcasias@gmail.com" class="button">Contact</a>
+
             </section>
+
+            <section class="description">
+                <h1>About Me</h1>
+                <p>
+                    I am currently serving in the U.S. Army and aspire to transition into a career in
+                    software development upon completing my service. Hailing from Aurora, Colorado, I am
+                    actively learning JavaScript, HTML, and CSS to build a solid foundation in web development.
+                    Outside
+                    of
+                    my professional pursuits, I enjoy working out and playing video games. Dedicated to continuous
+                    self-improvement, I am always seeking new ways to enhance my skills and knowledge.
+                </p>
+                <p>
+                    For any inquiries or to get in touch, please feel free to reach out to me at
+                    <span class="email">kennethcasias@gmail.com</span>. <br>I
+                    am
+                    open to networking opportunities and collaborations, especially in the field of software
+                    development.
+                </p>
+                <h2>Technologies I have worked with:</h2>
+
+                <section class="tech">
+                    <img class='logo' src="images/js.png" alt="javascript logo">
+                    <img class='logo' src="images/css.png" alt="css logo">
+                    <img class="logo" src="images/github.png" alt="github logo">
+                    <img class="logo" src="images/html.png" alt="html logo">
+                </section>
+
+            </section>
+
         </section>
+
         <section id="projects">
             <h1>Projects</h1>
 
@@ -56,19 +84,23 @@
             </a>
 
             <p class="quoteProjectDescription">
-                This is a javascript project that takes a nested array of quotes and prints a quote from each array
-                within the nested array. <br> With this project, I learned about nested arrays and looping through
+                This is a javascript project that takes a nested array of quotes and prints a quote from each
+                array
+                within the nested array. <br> With this project, I learned about nested arrays and looping
+                through
                 nested
                 arrays.
             </p>
             <h2>► Tea Shop Static Website Project</h2>
             <button type='button' class='button' id='button1'>Show more</button>
-            <p id="hidden1">With this project, I learned about nested arrays and looping through nested arrays.</p>
+            <p id="hidden1">With this project, I learned about nested arrays and looping through nested arrays.
+            </p>
             <img id="teaImage" src="images/TeaCozy.png" alt="Tea shop website design">
 
             <h2>► Arts and Crafts Static Website Project</h2>
             <button type='button' class='button' id='button2'>Show more</button>
-            <p id="hidden2">This is a static HTML website. This is the first project I worked on when I started learning
+            <p id="hidden2">This is a static HTML website. This is the first project I worked on when I started
+                learning
                 HTML and
                 CSS</p>
             <img id='craftsImage' src="images/ArtsandCrafts.png" alt="Arts and crafts website design">
