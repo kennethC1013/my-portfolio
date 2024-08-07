@@ -13,17 +13,22 @@ html {
     font-weight: 300;
 }
 
-a:visited {
+.quoteProject {
+    text-decoration: solid;
+}
+
+.quoteProject:visited {
     color: #0D1B2A;
 }
 
-a:hover {
+.quoteProject:hover {
     color: #0D1B2A;
     text-decoration: none;
 }
 
 .navlink {
     color: #E0E1DD;
+    background-color: #000000;
 }
 
 .navLink:visited {
@@ -32,6 +37,7 @@ a:hover {
 
 .navLink:hover {
     color: #778DA9;
+    opacity: 0.7;
 }
 
 .navLink:active {
@@ -126,8 +132,56 @@ main {
     padding-top: 3em;
     margin: 0 3em;
     display: flex;
-    flex-direction: column;
     align-items: center;
+}
+
+.contactCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 30em;
+    margin: auto;
+    text-align: center;
+}
+
+.me {
+    max-width: 30em;
+    max-height: 15em;
+    width: auto;
+    height: auto;
+}
+
+.jobTitle,
+.location,
+.mailButton {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: auto;
+}
+
+.jobTitle {
+    color: #778DA9;
+}
+
+#mail {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    display: block;
+    border-radius: 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+    font-size: 2em;
+}
+
+#mail:hover {
+    opacity: 0.7;
+}
+
+.fa-brands {
+    padding: 1em 0.5em;
+    color: #000000;
 }
 
 #about h1 {
@@ -139,6 +193,7 @@ main {
 .tech {
     display: flex;
     gap: 2em;
+    justify-content: center;
 }
 
 .logo {
