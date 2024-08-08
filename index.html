@@ -15,9 +15,9 @@
         <h1>Kenneth Casias</h1>
         <nav>
             <ul>
-                <li> <a class='navLink' href='#contact'>Contact</a></li>
-                <li><a class='navLink' href='#projects'>Projects</a></li>
-                <li><a class='navLink' href='#about'>About Me</a></li>
+                <li> <a id='navLink' class='button' href='#contact'>Contact</a></li>
+                <li><a id='navLink' class='button' href='#projects'>Projects</a></li>
+                <li><a id='navLink' class='button' href='#about'>About Me</a></li>
             </ul>
         </nav>
     </header>
@@ -29,7 +29,7 @@
         </section>
 
         <section id="about">
-            <section class="contactCard">
+            <section id="contact">
                 <img class='me' src="images/me.png" alt="Kenneth Casias">
                 <h1 class="name">Kenneth<br>Casias</h1>
                 <p class="jobTitle">Web Developer</p>
@@ -56,8 +56,7 @@
                     self-improvement, I am always seeking new ways to enhance my skills and knowledge.
                 </p>
                 <p>
-                    For any inquiries or to get in touch, please feel free to reach out to me at
-                    <span class="email">kennethcasias@gmail.com</span>. <br>I
+                    For any inquiries or to get in touch, please feel free to reach out to me. I
                     am
                     open to networking opportunities and collaborations, especially in the field of software
                     development.
@@ -92,28 +91,27 @@
                 arrays.
             </p>
             <h2>► Tea Shop Static Website Project</h2>
-            <button type='button' class='button' id='button1'>Show more</button>
+            <button type='button' class='showButton' id='button1'>Show more</button>
             <p id="hidden1">With this project, I learned about nested arrays and looping through nested arrays.
             </p>
             <img id="teaImage" src="images/TeaCozy.png" alt="Tea shop website design">
 
             <h2>► Arts and Crafts Static Website Project</h2>
-            <button type='button' class='button' id='button2'>Show more</button>
+            <button type='button' class='showButton' id='button2'>Show more</button>
             <p id="hidden2">This is a static HTML website. This is the first project I worked on when I started
                 learning
                 HTML and
-                CSS</p>
+                CSS.</p>
             <img id='craftsImage' src="images/ArtsandCrafts.png" alt="Arts and crafts website design">
 
             <h2>► HTML / CSS Cheatsheet</h2>
-            <button type='button' class='button' id='button3'>Show more</button>
+            <button type='button' class='showButton' id='button3'>Show more</button>
             <p id="hidden3">HTML and CSS syntax reference sheet using HTML table format.</p>
             <img id="cheatSheet" src="images/cheatsheet.png" alt="HTML and CSS cheatsheet">
         </section>
     </main>
     <footer>
         <h2 class="footNote">Thank you for checking out the website!</h2>
-        <h2 class="footNote">☺</h2>
     </footer>
     <script src="script.js"></script>
 </body>

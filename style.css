@@ -1,11 +1,20 @@
 * {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 html {
     background-color: #E0E1DD;
     color: #0D1B2A;
+    box-sizing: border-box;
 }
 
 .email {
@@ -26,25 +35,26 @@ html {
     text-decoration: none;
 }
 
-.navlink {
+#navlink {
     color: #E0E1DD;
     background-color: #000000;
+    text-decoration: none;
 }
 
-.navLink:visited {
-    color: #778DA9;
+#navLink:visited {
+    color: #E0E1DD;
 }
 
-.navLink:hover {
+#navLink:hover {
     color: #778DA9;
     opacity: 0.7;
 }
 
-.navLink:active {
+#navLink:active {
     font-size: 0.9em;
 }
 
-.button {
+.showButton {
     font-size: 1em;
     min-height: 2em;
     min-width: 8em;
@@ -54,7 +64,7 @@ html {
     border-radius: 1em;
 }
 
-.button:hover {
+.showButton:hover {
     background-color: #778DA9;
     cursor: pointer;
 }
@@ -66,8 +76,8 @@ html {
     background-repeat: no-repeat;
     height: 50em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: baseline;
     padding-bottom: 2em;
 }
 
@@ -77,7 +87,6 @@ html {
     padding-top: 6em;
     font-size: 3em;
 }
-
 
 header {
     position: fixed;
@@ -91,8 +100,8 @@ header h1 {
     color: #E0E1DD;
     font-weight: 900;
     text-shadow: .2em .2em #7C808F;
-    border: 1px solid white;
     flex: 1 1 auto;
+    padding-left: 2em;
 }
 
 nav li {
@@ -102,7 +111,30 @@ nav li {
     padding-right: 0.5em;
     float: right;
     min-height: 100%;
+    flex: 2;
 }
+
+/* navbar media queries */
+
+@media only screen and (max-width: 818px) {
+
+    nav {
+        font-size: 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+}
+
+/* end navbar media queries */
 
 h1 {
     flex-basis: 50em;
@@ -116,7 +148,6 @@ h2 {
 }
 
 main {
-    border-style: none double;
     display: flex;
     flex-direction: column;
 }
@@ -127,13 +158,28 @@ main {
     margin: 0 3em;
     display: flex;
     align-items: center;
+    padding-left: 3em;
+    gap: 11em;
 }
 
-.contactCard {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 30em;
+.description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 2;
+}
+
+.description p {
+    max-width: 90%;
+}
+
+#contact {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    max-width: 20em;
+    min-width: 10em;
     margin: auto;
     text-align: center;
+    flex: 1;
 }
 
 .me {
@@ -198,6 +244,31 @@ main {
     height: auto;
 }
 
+/* about section media queries */
+
+@media only screen and (max-width: 768px) {
+    #about {
+        margin: 0;
+        padding: 0;
+        padding-top: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description {
+        display: flex;
+        width: 100%;
+    }
+
+    .logo {
+        max-width: 4em;
+        max-height: 4em;
+    }
+}
+
+/* end about section media queries */
+
 p {
     width: 50em;
     font-size: 1.5em;
@@ -218,6 +289,10 @@ p {
 .quoteProject {
     font-weight: bold;
     font-size: 1.5em;
+}
+
+.quoteProject:active {
+    font-size: 1em;
 }
 
 #projects h1 {
@@ -245,6 +320,32 @@ p {
     height: 75%;
 }
 
+/* project section media queries */
+
+@media only screen and (max-width: 768px) {
+    #projects {
+        padding: 4em 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    #projects h1,
+    #projects p {
+        width: 100%;
+    }
+
+    #teaImage,
+    #craftsImage,
+    #cheatSheet {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+
+/* end project section media queries */
+
 footer {
     display: flex;
     justify-content: center;
@@ -257,3 +358,18 @@ footer {
     padding-top: 2em;
     color: #0D1B2A;
 }
+
+/* footer media queries */
+
+@media only screen and (max-width: 768px) {
+
+    .footNote {
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* end footer meduia queries */
