@@ -91,14 +91,8 @@ header h1 {
     color: #E0E1DD;
     font-weight: 900;
     text-shadow: .2em .2em #7C808F;
-    border: 1px solid black;
+    border: 1px solid white;
     flex: 1 1 auto;
-    width: 75%;
-}
-
-nav {
-    flex: 1 1 auto;
-    display: flex;
 }
 
 nav li {
