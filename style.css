@@ -24,13 +24,14 @@ html {
     box-sizing: border-box;
 }
 
+a {
+    color: #E0E1DD;
+    text-decoration: none;
+}
+
 .email {
     color: #415A77;
     font-weight: 300;
-}
-
-.quoteProject {
-    text-decoration: solid;
 }
 
 .quoteProject:visited {
@@ -38,13 +39,7 @@ html {
 }
 
 .quoteProject:hover {
-    color: #0D1B2A;
-    text-decoration: none;
-}
-
-#navlink {
-    color: #E0E1DD;
-    background-color: #000000;
+    color: #778DA9;
     text-decoration: none;
 }
 
