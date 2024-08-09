@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Cutive
+- Font Author: Copyright 2012 The Cutive Project Authors (https://github.com/googlefonts/CutiveFont), with Reserved Font Names "Cutive"
+- Font Source: https://fonts.gstatic.com/s/cutive/v22/NaPZcZ_fHOhV3Ip7T_hDoyqlZQ.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
